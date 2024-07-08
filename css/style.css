@@ -343,14 +343,21 @@ a:focus {
 
 
 .feature_section {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  position: relative;
+  /* -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); */
+ 
 }
 
 .feature_section .feature_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top:-100px;
+  left: 30rem;
+  width: 60rem;
+  
 }
 
 .feature_section .feature_container .box {
@@ -369,7 +376,7 @@ a:focus {
           align-items: center;
   text-align: center;
   margin: 0 10px;
-  padding: 45px 15px;
+  padding: 45px;
   background-color: #ffffff;
   color: #555089;
   -webkit-transition: all 0.3s;
@@ -382,6 +389,7 @@ a:focus {
   width: 90px;
   height: 90px;
 }
+
 
 .feature_section .feature_container .box .img-box svg {
   width: 100%;
@@ -404,7 +412,7 @@ a:focus {
 }
 
 .feature_section .feature_container .box:hover, .feature_section .feature_container .box.active {
-  background-color: #3c76e2;
+  background-color: #164eb6;
   color: #1d1c1c;
 }
 
@@ -415,11 +423,26 @@ a:focus {
 .feature_section .feature_container .box:hover .img-box svg path, .feature_section .feature_container .box.active .img-box svg path {
   fill: #ffffff;
 }
+.about_section{
+  background-image: url(/images/wallpaper2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* margin-top: -225px; */
+  height: 70rem;
+ 
+}
+
 
 .about_section .row {
-  -webkit-box-align: center;
+  /* margin-top: 20px; */
+  /* -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .about_section .detail-box h2 {
