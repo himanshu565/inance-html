@@ -513,7 +513,12 @@ a:focus {
 
 
 .professional_section {
-  background-color: #d1e3ff;
+
+  background-image: url(/images/Transformer.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #0f1011;
+ 
 }
 
 .professional_section .row {
@@ -530,10 +535,13 @@ a:focus {
   text-transform: uppercase;
   font-weight: bold;
   color: #0355cc;
+  text-align: center;
 }
 
 .professional_section .detail-box p {
   margin-top: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .professional_section .detail-box a {
@@ -546,6 +554,9 @@ a:focus {
   border: 1px solid #ff8a1d;
   border-radius: 2px;
   color: #ffffff;
+  text-align: center;
+  margin-left: 30rem;
+  
 }
 
 .professional_section .detail-box a:hover {
