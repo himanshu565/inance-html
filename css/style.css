@@ -430,6 +430,7 @@ a:focus {
   background-size: cover;
   /* margin-top: -225px; */
   height: 70rem;
+  
  
 }
 
@@ -443,6 +444,7 @@ a:focus {
   justify-content: center;
   align-items: center;
   padding-top: 10px;
+  
 }
 
 .about_section .detail-box h2 {
@@ -475,6 +477,7 @@ a:focus {
 
 .about_section .img-box img {
   width: 100%;
+  height: auto;
 }
 .scroll-container {
   width: 70%;
@@ -482,13 +485,15 @@ a:focus {
   align-items: center;
   overflow: hidden;
   position: relative;
-  height: 50vh;
+  height: 20vh;
+ 
 }
 
 .scroll-content {
   display: flex;
   animation: scroll 20s linear infinite;
   width: max-content;
+  
 }
 
 .scroll-content img {
@@ -502,7 +507,7 @@ a:focus {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(-35%);
+      transform: translateX(-34%);
   }
 }
 
