@@ -448,10 +448,12 @@ a:focus {
 .about_section .detail-box h2 {
   text-transform: uppercase;
   font-weight: bold;
+  color:lightblue;
 }
 
 .about_section .detail-box p {
   margin-top: 10px;
+  color: white;
 }
 
 .about_section .detail-box a {
@@ -474,6 +476,47 @@ a:focus {
 .about_section .img-box img {
   width: 100%;
 }
+.slidersection{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  left: 20rem;
+  
+  
+}
+.slider {
+  overflow: hidden;
+  width: 90rem;
+  height: 5rem;
+  border: 1px solid #181212;
+  position: absolute;
+  align-items: center;
+  size: 200rem;
+  background: transparent;
+  background-image: url(/images/wallpaper2.png);
+ 
+}
+
+.slide {
+  display: flex;
+  
+  transition: transform 25s linear infinite;
+  animation-delay:calc(25s/-1) ;
+}
+.item {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-right: 1px solid #ccc;
+  
+
+}
+
 
 .professional_section {
   background-color: #d1e3ff;

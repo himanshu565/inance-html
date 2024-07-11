@@ -4437,3 +4437,20 @@
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+const slide = document.querySelector('.slide');
+const items = document.querySelectorAll('.item');
+const itemWidth = items[0].clientWidth;
+let currentIndex = 0;
+
+document.querySelector('.slider').addEventListener('mousemove', (e) => {
+    const sliderWidth = e.currentTarget.clientWidth;
+    const x = e.clientX - e.currentTarget.getBoundingClientRect().left;
+
+    if (x < sliderWidth / 2 && currentIndex > 0) {
+        currentIndex--;
+        slide.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    } else if (x >= sliderWidth / 2 && currentIndex < items.length - 1) {
+        currentIndex++;
+        slide.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+});
