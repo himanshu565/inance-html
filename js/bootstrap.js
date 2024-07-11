@@ -4437,20 +4437,10 @@
 
 }));
 //# sourceMappingURL=bootstrap.js.map
-const slide = document.querySelector('.slide');
-const items = document.querySelectorAll('.item');
-const itemWidth = items[0].clientWidth;
-let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollContent = document.querySelectorAll(".scroll-content");
 
-document.querySelector('.slider').addEventListener('mousemove', (e) => {
-    const sliderWidth = e.currentTarget.clientWidth;
-    const x = e.clientX - e.currentTarget.getBoundingClientRect().left;
-
-    if (x < sliderWidth / 2 && currentIndex > 0) {
-        currentIndex--;
-        slide.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    } else if (x >= sliderWidth / 2 && currentIndex < items.length - 1) {
-        currentIndex++;
-        slide.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    }
+  // Duplicate the content to achieve the infinite scroll effect
+  const clone = scrollContent.cloneNode(true);
+  scrollContent.parentElement.appendChild(clone);
 });

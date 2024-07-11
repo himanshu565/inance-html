@@ -476,45 +476,34 @@ a:focus {
 .about_section .img-box img {
   width: 100%;
 }
-.slidersection{
-  display: inline-block;
-  justify-content: center;
+.scroll-container {
+  width: 70%;
+  display: flex;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  position: relative;
-  left: 20rem;
-  
-  
-}
-.slider {
   overflow: hidden;
-  width: 90rem;
-  height: 5rem;
-  border: 1px solid #181212;
-  position: absolute;
-  align-items: center;
-  size: 200rem;
-  background: transparent;
-  background-image: url(/images/wallpaper2.png);
- 
+  position: relative;
+  height: 50vh;
 }
 
-.slide {
+.scroll-content {
   display: flex;
-  
-  transition: transform 25s linear infinite;
-  animation-delay:calc(25s/-1) ;
+  animation: scroll 20s linear infinite;
+  width: max-content;
 }
-.item {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f1f1f1;
-  border-right: 1px solid #ccc;
-  
 
+.scroll-content img {
+  width: 100px; /* Adjust the width as needed */
+  height: 50px;
+  
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-35%);
+  }
 }
 
 
