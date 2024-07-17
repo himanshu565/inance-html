@@ -702,13 +702,128 @@ a:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.5);
 }
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #353638;
+}
 
+.why-choose-us h2 {
+  font-size: 20px;
+  color: #646cda;
+  margin: 0;
+}
 
+.why-choose-us h3 {
+  font-size: 28px;
+  margin: 10px 0 40px;
+  color: white;
+}
 
+.cardses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
+.cards {
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  &:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+  
+}
+}
+.cards:nth-child(even) {
+  background-color: #206ae9;
+  
+}
 
+.icons {
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  margin-left: 4rem;
+}
+.iconses{
+  background-color: #c7c7f5;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.cards h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: white;
+}
 
+.cards p {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+.wantocreate{
+  height: 50rem ;
+  background-color: #353638;
+  background-image:url(/images/desk.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  
+  
+}
 
+.want-to-create{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 20px;
+  color: white;
+  padding-top: 20rem;
+
+  /* margin-bottom: 4rem; */
+}
+.want-to-create p{
+  color :#b0b0b0;
+}
+
+.wanna-button {
+  display: inline-block;
+  background-color: #4016b3;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: medium;
+  color: #fff;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem;
+}
+
+.wanna-button:hover {
+  background-color: #c7c7f5;
+}
+
+.wanna-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.5);
+
+}
 
 .service_section {
   position: relative;
