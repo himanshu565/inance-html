@@ -4436,11 +4436,34 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=bootstrap.js.map
-document.addEventListener("DOMContentLoaded", () => {
-  const scrollContent = document.querySelectorAll(".scroll-content");
+//service section customers wala
+const slider = document.getElementById('testimonialSlider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
 
-  // Duplicate the content to achieve the infinite scroll effect
-  const clone = scrollContent.cloneNode(true);
-  scrollContent.parentElement.appendChild(clone);
+let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = slider.children;
+  if (index >= slides.length) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = slides.length - 1;
+  } else {
+    currentIndex = index;
+  }
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+prevButton.addEventListener('click', () => {
+  showSlide(currentIndex - 1);
 });
+
+nextButton.addEventListener('click', () => {
+  showSlide(currentIndex + 1);
+});
+
+// Auto slide
+setInterval(() => {
+  showSlide(currentIndex + 1);
+}, 5000);
